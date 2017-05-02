@@ -1,0 +1,4 @@
+builders: [cmake, cmakeExamples]
+
+dependencies:
+- compile: .cdep/fullfill/output/layout/cdep-manifest.yml
