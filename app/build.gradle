@@ -6,11 +6,14 @@ android {
 
     defaultConfig {
         applicationId "com.example.hellojni"
-        minSdkVersion 3
+        minSdkVersion 12
         targetSdkVersion 3
 
         testApplicationId "com.example.hellojni.tests"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        ndk {
+            abiFilters "x86", "x86_64", "armeabi", "armeabi-v7a"
+        }
     }
 
     externalNativeBuild {

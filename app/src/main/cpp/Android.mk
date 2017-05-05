@@ -12,11 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := hello-jni
-LOCAL_SRC_FILES := hello-jni.c
+LOCAL_SRC_FILES += hello-openssl.c
+LOCAL_STATIC_LIBRARIES += boost
+LOCAL_STATIC_LIBRARIES += openssl-ssl
+LOCAL_STATIC_LIBRARIES += openssl-crypto
+LOCAL_LDLIBS += -latomic
 
 include $(BUILD_SHARED_LIBRARY)
+
+$(call import-module, cdep-dependencies)
+
+
+
+
+
