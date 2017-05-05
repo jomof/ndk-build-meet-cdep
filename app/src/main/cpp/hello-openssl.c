@@ -40,7 +40,7 @@ Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env, jobject this) {
     }
 
     char message[1024];
-    sprintf(message, "Hello from CDep OpenSSL package!\nDigest %s", digest);
+    sprintf(message, "Hello from CDep OpenSSL package!\nMD5 Digest %s", digest);
 
     jstring result = (*env)->NewStringUTF(env, message);
 

@@ -17,9 +17,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE    := hello-jni
+LOCAL_MODULE    := hello-openssl
 LOCAL_SRC_FILES += hello-openssl.c
-LOCAL_STATIC_LIBRARIES += boost
 LOCAL_STATIC_LIBRARIES += openssl-ssl
 LOCAL_STATIC_LIBRARIES += openssl-crypto
 LOCAL_LDLIBS += -latomic

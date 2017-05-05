@@ -1,5 +1,4 @@
-builders: [ndk-build, cmake]
+builders: [ndk-build]
 
 dependencies:
-- compile: com.github.jomof:boost:1.0.63-rev24
 - compile: com.github.jomof:openssl:1.0.1-e-rev6
