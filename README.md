@@ -1,5 +1,5 @@
 # OpenSSL on Android Studio using ndk-build Integration
-This is a sample project that uses OpenSSL (http://openssl.org) together in an Android Gradle project using the [CDep](https://github.com/jomof/cdep) dependency management tool to download the OpenSSL package rather than building it. 
+This is a sample project that uses OpenSSL (http://openssl.org) in an Android Gradle project using the [CDep](https://github.com/jomof/cdep) dependency management tool to download the OpenSSL package rather than building it. 
 
 ![Screen Shot](Screenshot.png)
 
