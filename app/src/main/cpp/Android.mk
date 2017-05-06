@@ -11,7 +11,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 LOCAL_PATH := $(call my-dir)
 
@@ -25,9 +24,6 @@ LOCAL_LDLIBS += -latomic
 
 include $(BUILD_SHARED_LIBRARY)
 
+# Import all cdep-defined dependencies. The modules defined within are added
+# to LOCAL_STATIC_LIBRARIES above.
 $(call import-module, cdep-dependencies)
-
-
-
-
-
