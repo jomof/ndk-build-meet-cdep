@@ -25,7 +25,7 @@ Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env, jobject this) {
     const int digestLength = 16;
 
     // The message to hash
-    char input[] = "Facts do not cease to exist because they are ignored.";
+    char input[] = "We repeat what we do not repair.";
 
     // The binary hash of the message
     unsigned char output[digestLength];
