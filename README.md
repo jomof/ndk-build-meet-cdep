@@ -14,3 +14,9 @@ cd ndk-build-meet-cdep
 ./gradlew assemble
 ```
 You can also open the project in Android Studio and run it.
+
+## Adding OpenSSL to an existing CDep-enabled project
+Add this coordinate to your cdep.yml.
+```
+- compile: com.github.jomof:openssl:1.0.1-e-rev6
+```
