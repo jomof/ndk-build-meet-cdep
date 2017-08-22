@@ -1,5 +1,5 @@
-# OpenSSL on Android Studio using ndk-build Integration
-This is a sample project that uses OpenSSL (http://openssl.org) in an Android Gradle project using the [CDep](https://github.com/jomof/cdep) dependency management tool to download the OpenSSL package rather than building it. 
+# CDep on Android Studio using ndk-build Integration
+This is a sample project that uses Boost (http://boost.org) in an Android Gradle project using the [CDep](https://github.com/jomof/cdep) dependency management tool to download the Boost package rather than building it. 
 
 ![Screen Shot](Screenshot.png)
 
@@ -15,8 +15,3 @@ cd ndk-build-meet-cdep
 ```
 You can also open the project in Android Studio and run it.
 
-## Adding OpenSSL to an existing CDep-enabled project
-Add this coordinate to your cdep.yml.
-```
-- compile: com.github.jomof:openssl:1.0.1-e-rev6
-```
