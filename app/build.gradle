@@ -5,12 +5,13 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-        applicationId "com.example.hellojni"
-        minSdkVersion 12
-        targetSdkVersion 3
-
-        testApplicationId "com.example.hellojni.tests"
-        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        applicationId "com.example.jomof.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        
         ndk {
             abiFilters "x86", "x86_64", "armeabi", "armeabi-v7a"
         }
