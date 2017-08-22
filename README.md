@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jomof/ndk-build-meet-cdep.svg?branch=master)](https://travis-ci.org/jomof/ndk-build-meet-cdep)
 # CDep on Android Studio using ndk-build Integration
 This is a sample project that uses Boost (http://boost.org) in an Android Gradle project using the [CDep](https://github.com/jomof/cdep) dependency management tool to download the Boost package rather than building it. 
 
