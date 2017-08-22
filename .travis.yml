@@ -33,15 +33,18 @@ before_install:
     - set -e
     - ./cdep
     - cat cdep.sha256
-
+    
 install:
   - wget --no-check-certificate https://dl.google.com/android/repository/android-ndk-r13b-linux-x86_64.zip -O android-ndk-r13b-linux-x86_64.zip
   - unzip android-ndk-r13b-linux-x86_64.zip > android-ndk-r13b-linux-x86_64.uncompress-log 2>&1
   - export ANDROID_NDK_HOME=$PWD/android-ndk-r13b
+  - wget https://github.com/Commit451/android-cmake-installer/releases/download/1.1.0/install-cmake.sh
+  - chmod +x install-cmake.sh
+  - "./install-cmake.sh"
 
 script:
   - ./gradlew assemble
-
+  
   - android list targets
 
   - echo no | android create avd --force -n testemulator -t "android-21" --abi armeabi-v7a
