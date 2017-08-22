@@ -11,7 +11,7 @@ addons:
     - g++-6
 env:
   global:
-    - ANDROID_API_LEVEL=23
+    - ANDROID_API_LEVEL=24
     - ANDROID_BUILD_TOOLS_VERSION=25.0.0
 
 android:
@@ -26,10 +26,12 @@ android:
     - extra-android-support
     - sys-img-armeabi-v7a-google_apis-21
 
-
 before_install:
     - chmod +x gradlew
     - chmod +x cdep
+    - set -e
+    - ./cdep
+    - cat cdep.sha256
 
 install:
   - wget --no-check-certificate https://dl.google.com/android/repository/android-ndk-r13b-linux-x86_64.zip -O android-ndk-r13b-linux-x86_64.zip
@@ -37,7 +39,6 @@ install:
   - export ANDROID_NDK_HOME=$PWD/android-ndk-r13b
 
 script:
-  - ./cdep
   - ./gradlew assemble
 
   - android list targets
