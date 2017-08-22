@@ -26,6 +26,7 @@ android:
     - extra-android-support
     - sys-img-armeabi-v7a-google_apis-21
 
+
 before_install:
     - chmod +x gradlew
     - chmod +x cdep
