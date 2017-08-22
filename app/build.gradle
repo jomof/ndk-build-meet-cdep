@@ -13,6 +13,7 @@ android {
         externalNativeBuild {
             ndkBuild {
                 arguments 'NDK_MODULE_PATH+=../.cdep/modules/ndk-build'
+                cppFlags ''
             }
         }
         ndk {
