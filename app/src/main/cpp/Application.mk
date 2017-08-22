@@ -13,5 +13,5 @@
 # limitations under the License.
 
 APP_ABI := all
-NDK_MODULE_PATH += ../.cdep/modules/ndk-build
+APP_STL := c++_static
 NDK_TOOLCHAIN_VERSION := clang

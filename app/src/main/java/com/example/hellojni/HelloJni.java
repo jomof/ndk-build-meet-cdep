@@ -40,6 +40,6 @@ public class HelloJni extends Activity
     public native String  stringFromJNI();
 
     static {
-        System.loadLibrary("hello-openssl");
+        System.loadLibrary("example");
     }
 }
